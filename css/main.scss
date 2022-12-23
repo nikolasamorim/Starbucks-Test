@@ -126,6 +126,43 @@ section.all {
                     }
                 }
 
+                &.input-field {
+                    position: relative;
+                    width: 200px;
+
+                    margin-left: 100px;
+
+                    & input { 
+                        position: relative;
+                        
+                        width: 100%;
+                        padding: .6rem .8rem;
+
+                        border: 1px solid #B9B9B9;
+                        border-radius: 6px;
+
+                        font-weight: 500;
+
+                        &:focus { 
+                            outline: none;
+                        }
+                    }
+
+                    & ion-icon {
+                        position: absolute;
+
+                        right: 5px;
+
+                        font-size: 1.1rem;
+
+                        padding: .5rem .7rem;
+                        border-radius: 6px;
+
+                        background-color: #48A878;
+                        color: #fff;
+                    }
+                }
+
                 &.cart {
                     justify-content: flex-end;
 
@@ -451,6 +488,10 @@ section.all {
                         display: none;
                     }
 
+                    &.input-field {
+                        display: none;
+                    }
+
                     &.cart {
                         justify-content: flex-end;
 
@@ -505,6 +546,10 @@ section.all {
                     font-size: 1.8rem;
                 }
             }
+        }
+
+        .align-container {
+            padding: 0;
         }
 
         /* CONTAINER */

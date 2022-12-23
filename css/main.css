@@ -87,6 +87,27 @@ section.all {
           height: 3px;
           background-color: #48A878;
           transition: 0.4s; }
+        section.all nav ul li.input-field {
+          position: relative;
+          width: 200px;
+          margin-left: 100px; }
+          section.all nav ul li.input-field input {
+            position: relative;
+            width: 100%;
+            padding: .6rem .8rem;
+            border: 1px solid #B9B9B9;
+            border-radius: 6px;
+            font-weight: 500; }
+            section.all nav ul li.input-field input:focus {
+              outline: none; }
+          section.all nav ul li.input-field ion-icon {
+            position: absolute;
+            right: 5px;
+            font-size: 1.1rem;
+            padding: .5rem .7rem;
+            border-radius: 6px;
+            background-color: #48A878;
+            color: #fff; }
         section.all nav ul li.cart {
           justify-content: flex-end; }
           section.all nav ul li.cart ion-icon {
@@ -295,6 +316,8 @@ section.all {
             width: 80%; }
           section.all nav ul li.menu-desk {
             display: none; }
+          section.all nav ul li.input-field {
+            display: none; }
           section.all nav ul li.cart {
             justify-content: flex-end; }
             section.all nav ul li.cart ion-icon {
@@ -325,6 +348,8 @@ section.all {
           border-bottom: none; }
         section.all #sideMenu li ion-icon {
           font-size: 1.8rem; }
+    section.all .align-container {
+      padding: 0; }
     section.all .container {
       display: flex;
       flex-direction: column-reverse;
