@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <!--fontAwesome-->
+    <script src="https://kit.fontawesome.com/f1b6df7d8e.js" crossorigin="anonymous"></script>
+
+    <!--IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Starbucks - Nikolas Amorim</title>
+</head>
+
+<body>
+
+    <section class="all">
+        <nav>
+            <ul>
+                <li class="nav-menu">
+                    <ion-icon onclick="sideMenu(1)" name="menu-outline"></ion-icon>
+                </li>
+                <li><img class="logo-nav" src="img/starbucks-logo.png" alt="starbucks-logo.png"></li>
+                <li class="menu-desk">Menu</li>
+                <li class="menu-desk">Trending</li>
+                <li class="menu-desk">Rewards</li>
+                <li class="menu-desk">Gift Cards</li>
+                <li class="menu-desk">About</li>  
+                <li class="cart">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="sideMenu" class="close">
+            <li>
+                <ion-icon onclick="sideMenu(0)" name="close-outline"></ion-icon>
+            </li>
+            <li>Menu</li>
+            <li>Trending</li>
+            <li>Rewards</li>
+            <li>Gift Cards</li>
+            <li>About</li>
+        </div>
+
+        <div class="container">
+            <span class="informations">
+                <div class="align-titles">
+                    <h1 id="title" class="title"></h1>
+                    <h1 class="price">$<div id="value"></div>
+                    </h1>
+                </div>
+                <p id="description" class="description">
+                </p>
+
+                <div class="product-variatons">
+                    <h4>Options</h4>
+                    <ol class="items">
+                        <li onclick="item1()">
+                            <img src="img/products/item1.png" alt="">
+                        </li>
+                        <li onclick="item2()">
+                            <img src="img/products/item2.png" alt="">
+                        </li>
+                        <li onclick="item3()">
+                            <img src="img/products/item3.png" alt="">
+                        </li>
+                    </ol>
+                </div>
+                <div class="add-to-cart-area">
+                    <div class="counter">
+                        <button onclick="minus()" type="radio">
+                            <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+                        <h3 id="text-field"></h3>
+                        <button onclick="plus()" type="radio">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+
+            </span>
+            <span class="product-img">
+                <img id="coffee" src="img/products/item1.png" alt="coffee.png">
+            </span>
+            <span class="last-options">
+                <ol class="items">
+                    <li onclick="item1()">
+                        <img src="img/products/item1.png" alt="">
+                    </li>
+                    <li onclick="item2()">
+                        <img src="img/products/item2.png" alt="">
+                    </li>
+                    <li onclick="item3()">
+                        <img src="img/products/item3.png" alt="">
+                    </li>
+                </ol>
+            </span>
+        </div>
+    </section>
+
+
+    <!-- FOOTER-VIEW -->
+    <footer id="footer-main">
+        <section class="footer-ap">
+            <section class="footer-1">
+                <a class="logo" href="https://nikolasamorim.github.io/New-Portifolio/"><img src="img/logo-dark.png"
+                        alt="logo.png"></a>
+                <p>
+                    <i class="fa-brands fa-html5" style="color: #DD4B25;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #254BDD;"></i>
+                    <i class="fa-brands fa-sass" style="color: #C76494;"></i>
+                    <i class="fa-brands fa-js" style="color: #EFD81D;"></i>
+                    <i class="fa-brands fa-react" style="color: #5ED3F3;"></i>
+                    <i class="fa-brands fa-git-alt" style="color: #F3501D;"></i>
+                </p>
+            </section>
+
+            <section class="footer-2">
+                <h4>Menu</h4>
+                <p><a href="https://nikolasamorim.github.io/New-Portifolio#about">Sobre mim</a></p>
+                <p><a href="https://nikolasamorim.github.io/New-Portifolio#services">Serviços</a></p>
+                <p><a href="https://nikolasamorim.github.io/New-Portifolio#portfolio-view">Portfólio</a></p>
+                <p><a href="https://nikolasamorim.github.io/New-Portifolio#contact-view">Contato</a></p>
+            </section>
+
+            <section class="footer-3">
+                <h4>Redes Sociais</h4>
+                <p>
+                    <a href="https://www.linkedin.com/in/nikolasamorim/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/nikolasamorim"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linktr.ee/nikolasamorim"><i class="fa-solid fa-tree"></i></a>
+                    <a href="https://codepen.io/nikolas_amorim"><i class="fa-brands fa-codepen"></i></a><br><br>
+                    <a href="https://www.instagram.com/nikolas.amorim/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5531988698560&text=Ol%C3%A1%20tudo%20bem%3F"><i
+                            class="fab fa-whatsapp"></i></a>
+                </p>
+            </section>
+        </section>
+
+    </footer>
+
+    <div class="last">
+        <div>
+            Copyright© 2022 - Made by <a class="logo-footer" href="https://nikolasamorim.github.io/New-Portifolio/"><img
+                    src="img/logo-footer.png" alt="logo.png"></a>
+        </div>
+    </div>
+    <!-- END FOOTER-VIEW -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+</html>
