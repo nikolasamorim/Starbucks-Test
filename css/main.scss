@@ -63,6 +63,8 @@ section.all {
 
         padding: 1rem 0;
 
+        background-color: #fff;
+
         z-index: 9;
 
         & ul {
@@ -137,6 +139,16 @@ section.all {
 
     #sideMenu {
         display: none;
+    }
+
+    .align-container {
+        display: flex;
+
+        width: 100%;
+        height: 100%;
+        padding: 0 0 0 4rem;
+
+        background-color: #FFF9F4;
     }
 
     /* CONTAINER */
@@ -228,7 +240,7 @@ section.all {
 
                 }
 
-                & .description { 
+                & .description {
                     margin: 1rem 0 0;
 
                     font-size: .8rem;
@@ -256,7 +268,7 @@ section.all {
                 align-items: center;
 
                 width: 20%;
-                height: 75%;
+                height: 60%;
 
                 & .items {
                     display: flex;
@@ -266,7 +278,7 @@ section.all {
                     list-style: none;
 
                     & li img {
-                        width: 85%;
+                        width: 70%;
                     }
                 }
             }
@@ -281,6 +293,7 @@ section.all {
 /* FOOTER */
 
 #footer-main {
+    position: relative;
     display: flex;
     background-color: #0f0f0f;
     box-shadow: inset 0px 3px 0px 0px var(--color-principal);

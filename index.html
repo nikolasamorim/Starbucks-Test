@@ -32,7 +32,7 @@
                 <li class="menu-desk">Trending</li>
                 <li class="menu-desk">Rewards</li>
                 <li class="menu-desk">Gift Cards</li>
-                <li class="menu-desk">About</li>  
+                <li class="menu-desk">About</li>
                 <li class="cart">
                     <ion-icon name="bag-handle-outline"></ion-icon>
                 </li>
@@ -50,18 +50,49 @@
             <li>About</li>
         </div>
 
-        <div class="container">
-            <span class="informations">
-                <div class="align-titles">
-                    <h1 id="title" class="title"></h1>
-                    <h1 class="price">$<div id="value"></div>
-                    </h1>
-                </div>
-                <p id="description" class="description">
-                </p>
+        <div class="align-container">
+            <div class="container">
+                <span class="informations">
+                    <div class="align-titles">
+                        <h1 id="title" class="title"></h1>
+                        <h1 class="price">$<div id="value"></div>
+                        </h1>
+                    </div>
+                    <p id="description" class="description">
+                    </p>
 
-                <div class="product-variatons">
-                    <h4>Options</h4>
+                    <div class="product-variatons">
+                        <h4>Options</h4>
+                        <ol class="items">
+                            <li onclick="item1()">
+                                <img src="img/products/item1.png" alt="">
+                            </li>
+                            <li onclick="item2()">
+                                <img src="img/products/item2.png" alt="">
+                            </li>
+                            <li onclick="item3()">
+                                <img src="img/products/item3.png" alt="">
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="add-to-cart-area">
+                        <div class="counter">
+                            <button onclick="minus()" type="radio">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </button>
+                            <h3 id="text-field"></h3>
+                            <button onclick="plus()" type="radio">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+                        <button class="add-to-cart">Add to Order</button>
+                    </div>
+
+                </span>
+                <span class="product-img">
+                    <img id="coffee" src="img/products/item1.png" alt="coffee.png">
+                </span>
+                <span class="last-options">
                     <ol class="items">
                         <li onclick="item1()">
                             <img src="img/products/item1.png" alt="">
@@ -73,37 +104,8 @@
                             <img src="img/products/item3.png" alt="">
                         </li>
                     </ol>
-                </div>
-                <div class="add-to-cart-area">
-                    <div class="counter">
-                        <button onclick="minus()" type="radio">
-                            <ion-icon name="remove-outline"></ion-icon>
-                        </button>
-                        <h3 id="text-field"></h3>
-                        <button onclick="plus()" type="radio">
-                            <ion-icon name="add-outline"></ion-icon>
-                        </button>
-                    </div>
-                    <button class="add-to-cart">Add to Order</button>
-                </div>
-
-            </span>
-            <span class="product-img">
-                <img id="coffee" src="img/products/item1.png" alt="coffee.png">
-            </span>
-            <span class="last-options">
-                <ol class="items">
-                    <li onclick="item1()">
-                        <img src="img/products/item1.png" alt="">
-                    </li>
-                    <li onclick="item2()">
-                        <img src="img/products/item2.png" alt="">
-                    </li>
-                    <li onclick="item3()">
-                        <img src="img/products/item3.png" alt="">
-                    </li>
-                </ol>
-            </span>
+                </span>
+            </div>
         </div>
     </section>
 
