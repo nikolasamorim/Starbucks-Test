@@ -10,6 +10,10 @@
     transition: 0.4s;
 }
 
+body {
+    background-color: #FFF9F4;
+}
+
 *::selection {
     background-color: var(--color-principal);
 }
