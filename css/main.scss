@@ -436,6 +436,69 @@ section.all {
 @media(max-width: 990px) {
     /* ALL */
 
+    nav {
+        position: relative;
+        width: 100%;
+
+        padding: 1rem var(--body-padding);
+
+        z-index: 9;
+
+        & ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            position: relative;
+
+            & li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                position: relative;
+
+                width: 22.5%;
+
+                font-size: 1rem;
+                list-style: none;
+
+                color: var(--black);
+
+                &.nav-menu {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    & ion-icon {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                & img.logo-nav {
+                    position: relative;
+
+                    width: 80%;
+                }
+
+                &.menu-desk {
+                    display: none;
+                }
+
+                &.input-field {
+                    display: none;
+                }
+
+                &.cart {
+                    justify-content: flex-end;
+
+                    & ion-icon {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
     section.all {
         position: relative;
 
@@ -444,69 +507,6 @@ section.all {
 
         padding: 0 var(--body-padding);
         margin: 0 0 2rem 0;
-
-        & nav {
-            position: relative;
-            width: 100%;
-
-            padding: 1rem 0rem;
-
-            z-index: 9;
-
-            & ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-                position: relative;
-
-                & li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    position: relative;
-
-                    width: 22.5%;
-
-                    font-size: 1rem;
-                    list-style: none;
-
-                    color: var(--black);
-
-                    &.nav-menu {
-                        display: flex;
-                        justify-content: flex-start;
-
-                        & ion-icon {
-                            font-size: 1.6rem;
-                        }
-                    }
-
-                    & img.logo-nav {
-                        position: relative;
-
-                        width: 80%;
-                    }
-
-                    &.menu-desk {
-                        display: none;
-                    }
-
-                    &.input-field {
-                        display: none;
-                    }
-
-                    &.cart {
-                        justify-content: flex-end;
-
-                        & ion-icon {
-                            font-size: 1.8rem;
-                        }
-                    }
-                }
-            }
-        }
 
         #sideMenu {
             display: flex;

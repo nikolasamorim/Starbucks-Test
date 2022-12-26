@@ -283,6 +283,41 @@ section.all {
 /* END FOOTER */
 @media (max-width: 990px) {
   /* ALL */
+  nav {
+    position: relative;
+    width: 100%;
+    padding: 1rem var(--body-padding);
+    z-index: 9; }
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative; }
+      nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 22.5%;
+        font-size: 1rem;
+        list-style: none;
+        color: var(--black); }
+        nav ul li.nav-menu {
+          display: flex;
+          justify-content: flex-start; }
+          nav ul li.nav-menu ion-icon {
+            font-size: 1.6rem; }
+        nav ul li img.logo-nav {
+          position: relative;
+          width: 80%; }
+        nav ul li.menu-desk {
+          display: none; }
+        nav ul li.input-field {
+          display: none; }
+        nav ul li.cart {
+          justify-content: flex-end; }
+          nav ul li.cart ion-icon {
+            font-size: 1.8rem; }
   section.all {
     position: relative;
     width: 100%;
@@ -291,41 +326,6 @@ section.all {
     margin: 0 0 2rem 0;
     /* CONTAINER */
     /* END - CONTAINER */ }
-    section.all nav {
-      position: relative;
-      width: 100%;
-      padding: 1rem 0rem;
-      z-index: 9; }
-      section.all nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative; }
-        section.all nav ul li {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-          width: 22.5%;
-          font-size: 1rem;
-          list-style: none;
-          color: var(--black); }
-          section.all nav ul li.nav-menu {
-            display: flex;
-            justify-content: flex-start; }
-            section.all nav ul li.nav-menu ion-icon {
-              font-size: 1.6rem; }
-          section.all nav ul li img.logo-nav {
-            position: relative;
-            width: 80%; }
-          section.all nav ul li.menu-desk {
-            display: none; }
-          section.all nav ul li.input-field {
-            display: none; }
-          section.all nav ul li.cart {
-            justify-content: flex-end; }
-            section.all nav ul li.cart ion-icon {
-              font-size: 1.8rem; }
     section.all #sideMenu {
       display: flex;
       flex-direction: column;
